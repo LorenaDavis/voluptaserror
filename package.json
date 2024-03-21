@@ -1,0 +1,31 @@
+{
+  "name": "voluptaserror",
+  "scripts": {
+    "precommit": "lerna run --concurrency 1 --stream precommit",
+    "dev-rsw3": "lerna exec --scope @statesauce/web3 -- npm run dev",
+    "dev-ec": "lerna exec --scope @statesauce/web3-eth-contract -- npm run dev",
+    "dev-subscribe": "lerna exec --scope @statesauce/web3-eth-subscribe -- npm run dev",
+    "link-rsw3": "lerna exec --scope @statesauce/web3 -- npm link",
+    "link-ec": "lerna exec --scope @statesauce/web3-eth-contract -- npm link",
+    "link-subscribe": "lerna exec --scope @statesauce/web3-eth-subscribe -- npm link",
+    "link-deps-rsw3": "lerna exec --scope @statesauce/web3 -- npm run link-deps",
+    "link-deps-rrsw3": "lerna exec --scope @statesauce/react-web3 -- npm run link-deps",
+    "rm-ws": "rm -rf packages/web3/node_modules/websocket"
+  },
+  "devDependencies": {
+    "husky": "^2.4.1",
+    "lerna": "^3.15.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
+  },
+  "author": "LonnyDonnelly",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LorenaDavis/voluptaserror.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LorenaDavis/voluptaserror.git/issues"
+  },
+  "homepage": "https://github.com/LorenaDavis/voluptaserror.git",
+  "version": "1.0.0"
+}
